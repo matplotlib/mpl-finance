@@ -1,9 +1,11 @@
 [![Build Status](https://travis-ci.org/matplotlib/mpl-finance.svg?branch=master)](https://travis-ci.org/matplotlib/mpl-finance)
 
-## New Version
-There is a new, pre-release version of this package here: https://github.com/matplotlib/mplfinance
+# New Version
+## This package is being deprecated in 2020.  Please go here for the new version: https://github.com/matplotlib/mplfinance
 
 To understand somewhat of the history and where we are going with this package, please see the rest of this README below, as well as the README for the new package.
+
+<br><br><br><br>
 
 ## Introduction
 My name is Daniel Goldfarb.  Last month (November 2019) I became the maintainer of `matplotlib/mpl-finance`.  This module consists of code extracted from the deprecated `matplotlib.finance` module along with a few examples of usage.  The code has been mostly un-maintained for the past three years.
