@@ -6,6 +6,21 @@ financial data.   User contributions welcome!
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
 
+import warnings as __warnings
+import sys as __sys
+if not __sys.warnoptions:
+    import os as __os
+    __warnings.filterwarnings("default",category=DeprecationWarning,module='mpl_finance') # Change the filter in this process
+    __os.environ["PYTHONWARNINGS"] = "default::DeprecationWarning:mpl_finance"            # Also affect subprocesses
+
+__warnings.warn('\n\n  ================================================================='+
+                '\n\n   WARNING: `mpl_finance` is deprecated:'+
+                '\n\n    Please use `mplfinance` instead (no hyphen, no underscore).'+
+                '\n\n    To install: `pip install --upgrade mplfinance` '+
+                '\n\n   For more information, see: https://pypi.org/project/mplfinance/'
+                '\n\n  =================================================================\n',
+                category=DeprecationWarning)
+
 import numpy as np
 from matplotlib import colors as mcolors
 from matplotlib.collections import LineCollection, PolyCollection
